@@ -22,12 +22,12 @@ class Decoder
     private $depth;
 
     /**
-     * @param mixed $json
+     * @param string $json
      * @param int $options
      * @param bool $assoc
      * @param int $depth
      */
-    public function __construct($json, int $options = 0, bool $assoc = false, int $depth = 512)
+    public function __construct(string $json, int $options = 0, bool $assoc = false, int $depth = 512)
     {
         $this->json = $json;
         $this->assoc = $assoc;
