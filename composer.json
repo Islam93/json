@@ -1,6 +1,6 @@
 {
   "name": "islam93/json",
-  "description": "Wrapper for SPL json functions",
+  "description": "Object-oriented implementation of json_decode/json_encode functions",
   "type": "library",
   "license": "MIT",
   "authors": [
