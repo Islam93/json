@@ -1,0 +1,11 @@
+services:
+  - docker
+matrix:
+  include:
+    - language: php
+      name: "7.3-rc"
+
+before_script:
+  - docker build --build-arg PHP_VERSION=${TRAVIS_JOB_NAME} -t json .
+script:
+  - docker run json /usr/src/json/vendor/bin/phpunit --colors
